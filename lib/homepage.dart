@@ -19,7 +19,7 @@ class _HomePageState extends State<HomePage> {
   double height = 0;
   double time = 0;
   double gravity = -4.9; //how strong the gravity is
-  double velocity = 3.5; //how strong the jump is
+  double velocity = 1.5; //how strong the jump is
   double birdWidth = 0.1;
   double birdHeight = 0.1;
 
@@ -152,7 +152,7 @@ class _HomePageState extends State<HomePage> {
                         birdHeight: birdHeight,
                       ),
 
-                      MyCoverScreen(gameHasStarted: gameHasStarted),
+                      //MyCoverScreen(gameHasStarted: gameHasStarted),
                       // Container(
                       //   alignment: Alignment(0, -0.5),
                       //   child: Text(gameHasStarted ? '' : 'Toque para Jogar',
@@ -197,7 +197,7 @@ class _HomePageState extends State<HomePage> {
               color: Colors.brown,
               child: Center(
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,

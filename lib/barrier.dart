@@ -15,12 +15,12 @@ class MyBarrier extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      alignment: Alignment((2 * barrierX + barrierWidth) / (2 - barrierWidth),
+      alignment: Alignment((4 * barrierX + barrierWidth) / (4 - barrierWidth),
           (isThisBottomBarrier ? 1 : -1)),
       child: Container(
         color: Colors.green,
-        width: MediaQuery.of(context).size.width * barrierWidth / 2,
-        height: MediaQuery.of(context).size.height * barrierHeight / 2,
+        width: MediaQuery.of(context).size.width * barrierWidth / 2.5,
+        height: MediaQuery.of(context).size.height * barrierHeight / 2.5,
       ),
     );
   }
